@@ -1,0 +1,756 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.navbar {
+    background: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(137, 137, 137, 0.654) 60%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__links:hover {
+    color: red;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px){
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5 ease;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+    }
+
+    .navbar__menu.active {
+        background: #fff;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5 ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo {
+        padding-left: 25px;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: black;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+
+
+/* Hero section */
+
+.main {
+    background-color: #131313;
+    height: 100%;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    height: 100%;
+    background-color: #131313;
+    z-index: 1;
+    width: 100%;
+    width: 100vw;
+    padding: 0 0px;
+}
+ .main img {
+    width: 100vw;
+ }
+
+
+/* Mobile responsive */
+
+
+@media  screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%vh;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+}
+
+/* Services section*/
+
+.services {
+    background: rgb(210, 210, 208);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.services h1 {
+    padding-top: 4%;
+    text-align: center;
+    width: 100%;
+}
+
+.services__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: large;
+    padding-bottom: 50px;
+    align-items: center;
+
+    
+}
+
+.services__card {
+    padding: 3%;
+}
+
+.services__card p{
+    width: 40vw;
+    text-align: justify;
+    
+
+}
+
+
+.services__card img { 
+    width: 30vw;
+}
+
+
+
+
+@media  screen and (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+    .services__container {
+        justify-items: center;
+    }
+    .services h1 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .services__card img {
+        width: 80vw;
+        height: auto;
+    }
+    .services__card p {
+        width: 100%;
+        font-size: 1rem;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+
+/* naša ponudba section*/
+
+.prodaja__naslovnica {
+    background-color: rgb(210, 210, 208);
+}
+
+.prodaja__naslovnica h1 {
+    font-weight:900;
+    font-size: 2.5rem;
+    padding-left: 1%;
+    padding-bottom: 3%;
+} 
+
+.ponudba {
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: rgb(210, 210, 208);
+    
+}
+
+.nepremicnina {
+    border:  3px solid #000000;
+    background: white;
+    padding: 1%;
+    width: 20vw;
+}
+
+.nepremicnina img {
+    width: 100%;
+}
+
+.nepremicnina a {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.nepremicnina p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.nepremicnina h3 {
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+}
+
+@media  screen and (max-width: 768px) {
+    .prodaja__naslovnica h1 {
+        text-align: center;
+    }
+    .prodaja__naslovnica {
+        height: 100% + 10vh;
+        justify-items: center;
+    }
+
+    .ponudba {
+        flex-direction: column;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+    .nepremicnina {
+        width: 90vw;
+    }
+    .prodaja {
+        flex-direction: column;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        padding: 0px 0px;
+        margin: 0px;
+
+
+    }
+}
+
+
+/* footer section*/
+
+
+.footer__container {
+    color: white;
+    background-color: rgb(58, 57, 56);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+    width: 100vw;
+}
+
+.footer__container img {
+    height: 20vh;
+}
+.footer__logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer__links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link--wrapper {
+    display: flex;
+    width: 30vw;
+}
+
+.footer__link--items {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.footer__link--items h2 {
+    padding: 10px;
+}
+
+.footer__link--items  h3 {
+    color: #fff;
+    padding: 10px;
+}
+
+.footer__link--items a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link--items a:hover {
+    color: #e9e9e9;
+    transition: 0.3s ease-out;
+}
+
+
+.footer__link--items a {
+    color: red;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+@media  screen and (max-width: 768px) {
+    .footer__container {
+        width: 100vw;
+    }
+    .footer__links {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+}
+
+/* Prodaja */
+
+
+
+.prodaja {
+    overflow: hidden;
+    padding: 3em;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 6rem;
+    background-color: rgb(210, 210, 208);
+}
+
+.prodamo_test {
+    background-color: rgb(210, 210, 208);
+}
+
+.nepremicnina {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media  screen and (max-width: 768px) {
+    .prodaja {
+        align-items: center;
+        padding: 0;
+        padding-top: 1em;
+        gap: 1em;
+        min-height: 0;
+    }
+    .nepremicnina {
+        margin: 1em;
+    }
+    
+}
+
+
+.head {
+    background-color: rgb(210, 210, 208);
+}
+
+.head h1 {
+    font-size: 3rem;
+    padding: 25px;
+}
+.prodamo_test {
+    position: relative;
+    display: inline-block;
+}
+
+.prodamo_test button {
+    width: 100px;
+    height: 50px;
+    margin-left: 2em;
+    cursor: pointer;
+    background-color: white;
+}
+
+.fil {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fil button {
+    display: block;
+}
+
+.fil button:hover {
+    background-color: gray;
+}
+
+.prodamo_test:hover .fil {
+    display: block;
+}
+
+
+
+.prodamo_test1 {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.prodamo_test1 button {
+    width: 100px;
+    height: 50px;
+    margin-left: 0em;
+    cursor: pointer;
+    background-color: white;
+}
+
+.fil1 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fil1 button {
+    display: block;
+}
+
+.fil1 button:hover {
+    background-color: gray;
+}
+
+.prodamo_test1:hover .fil1 {
+    display: block;
+}
+
+.prodaja {
+    min-height: 100vh;
+}
+
+
+
+
+
+/*Kontakt*/
+
+.kontakt {
+    background-color: rgb(210, 210, 208);
+    min-height: 92vh;
+}
+
+
+
+
+
+.kontakt {
+    background: rgb(210, 210, 208);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.kontakt h1 {
+    padding-top: 4%;
+    text-align: center;
+    width: 100%;
+    padding: 4%;
+}
+
+.kontakt__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: large;
+    padding-bottom: 50px;
+    align-items: center;
+    
+}
+
+.kontakt__card {
+    padding: 3%;
+}
+
+.kontakt__card p{
+    width: 50vw;
+    text-align: center;
+
+}
+
+.kontakt__card img { 
+    height: 30vw;
+
+}
+
+
+
+
+@media  screen and (max-width: 768px) {
+    .kontakt {
+        flex-direction: column;
+    }
+    .services__container {
+        justify-items: center;
+    }
+    .kontakt h1 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .kontakt__card img {
+        display: none;
+        width: 80vw;
+        height: auto;
+    }
+    .kontakt__card p {
+        width: 100%;
+        font-size: 1rem;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+/* Stran objave */
+
+.razlaga {
+    background-color: rgb(210, 210, 208);
+}
+
+.razlaga h1 {
+    padding:0rem 4rem 0rem 4rem;
+}
+
+.razlaga p {
+    padding: 4rem;
+    font-size: large;
+}
+
+.mySlides {
+    display: none;
+    padding: 2rem;
+    background-color: rgb(210, 210, 208);
+    justify-content: center;
+}
+.my Slides img {vertical-align: middle;
+    height: 600px;
+    
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: rgb(210, 210, 208);
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@media  screen and (max-width: 768px) {
+    .prev, .next,.text {font-size: 11px}
+    .mySlides img {
+        width: 90vw;
+        height: 50vh;
+    }
+}
+
+
+
