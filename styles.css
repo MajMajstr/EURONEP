@@ -374,6 +374,7 @@
 
 .footer__container img {
     height: 20vh;
+    padding-left: 9%;
 }
 .footer__logo {
     color: #fff;
