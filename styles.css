@@ -654,12 +654,13 @@
 }
 
 .razlaga h1 {
-    padding:0rem 4rem 0rem 4rem;
+    padding:2rem 4rem 0rem 4rem;
+    font-size: 1.5rem;
 }
 
 .razlaga p {
     padding: 4rem;
-    font-size: large;
+    font-size: 1.5rem;
 }
 
 .mySlides {
