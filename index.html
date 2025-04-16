@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,78 +8,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap" rel="stylesheet">
+
+    <!-- Consent Manager (avtomatsko blokira skripte po GDPR) -->
     <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/db444374f2e0f.js" data-cmp-host="c.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="16"></script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-93GCXRNMB4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-93GCXRNMB4');
-</script>
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
-  n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1216630436472819'); // 🔁 Tukaj zamenjaj s svojim Pixel ID
-  fbq('track', 'PageView');
-</script>
+    <!-- Google Analytics (po soglasju) -->
+    <script async type="text/plain" data-cmp-type="statistics" src="https://www.googletagmanager.com/gtag/js?id=G-93GCXRNMB4"></script>
+    <script type="text/plain" data-cmp-type="statistics">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-93GCXRNMB4');
+    </script>
 
-<noscript>
-  <img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1216630436472819&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
+    <!-- Meta Pixel (po soglasju) -->
+    <script type="text/plain" data-cmp-type="marketing">
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
+      n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1216630436472819');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1216630436472819&ev=PageView&noscript=1"/>
+    </noscript>
 </head>
 
-    <body>
-        <nav class="navbar">
-            <div class="navbar_container">
-                <a href="index.html" id="navbar__logo">EURONEP nepremičnine</a>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="prodamo.html" class="navbar__links">
-                            PRODAMO
-                        </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="oddamo.html" class="navbar__links">
-                            ODDAMO
-                        </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="kupimo.html" class="navbar__links">
-                            KUPIMO
-                        </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="najamemo.html" class="navbar__links">
-                            NAJAMEMO
-                        </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="kontakt.html" class="navbar__links">
-                            KONTAKT
-                        </a>
-                    </li>
-                </ul>
+<body>
+    <!-- Navigacija -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="index.html" id="navbar__logo">EURONEP nepremičnine</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="prodamo.html" class="navbar__links">PRODAMO</a></li>
+                <li class="navbar__item"><a href="oddamo.html" class="navbar__links">ODDAMO</a></li>
+                <li class="navbar__item"><a href="kupimo.html" class="navbar__links">KUPIMO</a></li>
+                <li class="navbar__item"><a href="najamemo.html" class="navbar__links">NAJAMEMO</a></li>
+                <li class="navbar__item"><a href="kontakt.html" class="navbar__links">KONTAKT</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <!--Hero section--> 
-
+    <!-- Hero sekcija -->
     <div class="main">
         <div class="main__container">
             <div class="main__img--container">
@@ -87,60 +68,21 @@
             </div>
         </div>
     </div>
-    <!--Services section-->
 
+    <!-- Storitev -->
     <div class="services">
-        <h1>Iščete zanesljivega partnerja, ki vam lahko ponudi optimalno storitev na področju nepremičnin?</h1>
+        <h1>Iščete zanesljivega partnerja ...</h1>
         <div class="services__container">
             <div class="services__card">
                 <img src="logo-image.jpg" alt="pic" id="services__logo">
             </div>
             <div class="services__card">
-                <p>Dobrodošli v nepremičninski agenciji EURONEP, kjer se vaše sanje o popolni nepremičnini prepletajo z našo predanostjo, strokovnostjo in zanesljivostjo.
-                    Naša vizija je ustvariti most med vašimi željami in možnostmi, pri čemer si prizadevamo, da vsaka nepremičninska zgodba postane uspešna. Zavedamo se, da je nakup, prodaja ali najem nepremičnine pomembna življenjska odločitev, zato se v podjetju EURONEP zavezujemo, da vas bomo spremljali na vsakem koraku tega procesa.
-                    <br><br>Zakaj izbrati nas? <br><br>
-                    <span style="font-weight: 700;">Osebni pristop:</span> Prisluhnemo vašim potrebam, da bi našli rešitve, ki so prilagojene prav vam.<br><br>
-                    <span style="font-weight: 700;">Strokovno znanje:</span> Poznamo trg, zakonodajo in prvine, ki so ključne za uspešno izvedbo transakcije.<br><br>
-                    <span style="font-weight: 700;">Zanesljivost in diskretnost:</span> Vaše zaupanje nam veliko pomeni, zato ravnamo profesionalno in odgovorno.<br><br>
-                    <span style="font-weight: 700;">Celovita storitev:</span> Ne glede na to, ali kupujete, prodajate ali najemate, pri nas najdete celovito rešitev pod eno streho.</p>
+                <p>Dobrodošli v nepremičninski agenciji EURONEP ...</p>
             </div>
         </div>
     </div>
 
-
-<!-- naša ponudba section -->
-
-<!-- 
-    <div class="prodaja__naslovnica">
-        <h1>Naša ponudba nepremičnin</h1>
-        <div class="ponudba">
-           <div class="nepremicnina">
-                <a href="/test_slika.png" class="naslov">ČRNUČE, TERASNO Z LASTNIM GOZDOM</a>
-                <h3>400.000$</h3>
-                <a href="/logo-image.jpg"><img src="test_slika.png" alt="" class="naslovna__slika"></a>
-                <p class="kratek__opis">Posredovanje: Prodaja <br> Velikost: 257 m2 <br> Cena: 400.000,00€ </p>
-            </div>
-            <div class="nepremicnina">
-                <a href="/test_slika.png" class="naslov">ČRNUČE, TERASNO Z LASTNIM GOZDOM</a>
-                <h3>400.000$</h3>
-                <a href="/logo-image.jpg"><img src="test_slika.png" alt="" class="naslovna__slika"></a>
-                <p class="kratek__opis">Posredovanje: Prodaja <br> Velikost: 257 m2 <br> Cena: 400.000,00€ </p>
-            </div>
-            <div class="nepremicnina">
-                <a href="/test_slika.png" class="naslov">ČRNUČE, TERASNO Z LASTNIM GOZDOM</a>
-                <h3>400.000$</h3>
-                <a href="/logo-image.jpg"><img src="test_slika.png" alt="" class="naslovna__slika"></a>
-                <p class="kratek__opis">Posredovanje: Prodaja <br> Velikost: 257 m2 <br> Cena: 400.000,00€ </p>
-            </div>
-            <div class="nepremicnina">
-                <a href="/test_slika.png" class="naslov">ČRNUČE, TERASNO Z LASTNIM GOZDOM</a>
-                <h3>400.000$</h3>
-                <a href="/logo-image.jpg"><img src="test_slika.png" alt="" class="naslovna__slika"></a>
-                <p class="kratek__opis">Posredovanje: Prodaja <br> Velikost: 257 m2 <br> Cena: 400.000,00€ </p>
-            </div>
-        </div>
- -->
-<!-- footer section -->
+    <!-- Footer -->
     <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
@@ -151,21 +93,24 @@
             <div class="footer__link--wrapper">
                 <div class="footer__link--items">
                     <h2>Nepremičninska agencija: </h2>
-                    <h3>EURONEP, Tomaž Končina s.p.</h2>
+                    <h3>EURONEP, Tomaž Končina s.p.</h3>
                     <h3>Velika Loka 20, 8212 Velika Loka</h3>
                 </div>
             </div>
             <div class="footer__link--wrapper">
                 <div class="footer__link--items">
-                    <h2>KONTAKT</h1>
-                    <h3>Tel. 031 394 701</h2>
-                    <h3>tomaz.koncina@gmail.com</h2>
+                    <h2>KONTAKT</h2>
+                    <h3>Tel. 031 394 701</h3>
+                    <h3>tomaz.koncina@gmail.com</h3>
                     <a href="splosnipogoji.pdf">splošni pogoji poslovanja</a>
                 </div>
             </div>
         </div>
     </div>
-    
-        <script src="app.js"></script>
-    </body>
+
+    <!-- Gumb za nastavitve piškotkov -->
+    <button onclick="__cmp('showConsentTool')" style="position: fixed; bottom: 10px; right: 10px; padding: 10px 15px; background-color: #333; color: #fff; border: none; cursor: pointer;">Nastavitve piškotkov</button>
+
+    <script src="app.js"></script>
+</body>
 </html>
