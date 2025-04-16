@@ -8,16 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+     <!-- Consent Manager (avtomatsko blokira skripte po GDPR) -->
     <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/db444374f2e0f.js" data-cmp-host="c.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="16"></script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-93GCXRNMB4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-93GCXRNMB4');
-</script>
+    <!-- Google Analytics (po soglasju) -->
+    <script async type="text/plain" data-cmp-type="statistics" src="https://www.googletagmanager.com/gtag/js?id=G-93GCXRNMB4"></script>
+    <script type="text/plain" data-cmp-type="statistics">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-93GCXRNMB4');
+    </script>
+
+   <!-- Meta Pixel JS (po soglasju za marketing) -->
+    <script async type="text/plain" data-cmp-type="marketing" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    
+    <!-- Meta Pixel konfiguracija (po soglasju za marketing) -->
+    <script type="text/plain" data-cmp-type="marketing">
+      window.fbq = window.fbq || function(){ fbq.callMethod ? fbq.callMethod.apply(fbq, arguments) : fbq.queue.push(arguments); };
+      if (!window._fbq) window._fbq = fbq;
+      fbq.push = fbq;
+      fbq.loaded = true;
+      fbq.version = '2.0';
+      fbq.queue = [];
+    
+      fbq('init', '1216630436472819');
+      fbq('track', 'PageView');
+    </script>
+    
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1216630436472819&ev=PageView&noscript=1"/>
+    </noscript>
 </head>
     <body>
         <nav class="navbar">
