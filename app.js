@@ -10,14 +10,12 @@ menu.addEventListener('click', function() {
 filterSelection("all")
 
 function filterSelection(c) {
-    var x,i;
-    x = document.getElementsByClassName("nepremicnina");
-    if(c == "all") c = "";
-    for (i=0; i< x.length; i++){
-        if (x[i].className.indexOf(c) > -1 || c == "") {
-            x[i].classList.remove("hide"); // prikaz
+    const x = document.getElementsByClassName("nepremicnina");
+    for (let i = 0; i < x.length; i++) {
+        if (c === "all" || x[i].classList.contains(c)) {
+            x[i].classList.remove("hide");
         } else {
-            x[i].classList.add("hide"); // skrij
+            x[i].classList.add("hide");
         }
     }
 }
@@ -65,11 +63,9 @@ for (var i = 0; i<btns.length; i++) {
 filterSelection1("all")
 
 function filterSelection1(c) {
-    var x,i;
-    x = document.getElementsByClassName("nepremicnina");
-    if(c == "all") c = "";
-    for (i=0; i< x.length; i++){
-        if (x[i].className.indexOf(c) > -1 || c == "") {
+    const x = document.getElementsByClassName("nepremicnina");
+    for (let i = 0; i < x.length; i++) {
+        if (c === "all" || x[i].classList.contains(c)) {
             x[i].classList.remove("hide");
         } else {
             x[i].classList.add("hide");
