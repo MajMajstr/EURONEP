@@ -299,18 +299,25 @@
 }
 
 .nepremicnina {
-    border:  3px solid #000000;
+    border: 3px solid #000000;
     background: white;
     padding: 1%;
     width: 20vw;
-    height: 35vh;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: auto; /* 🔧 Odstrani fiksno višino */
+    max-height: 550px; /* 🔧 Omeji max višino, če želiš poravnavo */
 }
 
 .nepremicnina img {
     width: 100%;
-    height:30vh;
+    height: 180px;
     object-fit: cover;
+    border-radius: 2px;
 
 }
 
@@ -319,21 +326,23 @@
 }
 
 .nepremicnina a {
-    font-size: 1.3rem;
-    padding-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
     text-decoration: none;
     color: black;
 }
 
 .nepremicnina p {
     text-align: center;
-    padding-top: 10px;
+    font-size: 0.95rem;
+    margin-top: 0.5em;
 }
 
 .nepremicnina h3 {
     color: red;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px 0;
+    font-size: 1.2rem;
 }
 
 @media  screen and (max-width: 768px) {
