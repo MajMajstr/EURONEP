@@ -304,6 +304,7 @@
     padding: 1%;
     width: 20vw;
     height: 35vh;
+    display: block;
 }
 
 .nepremicnina img {
@@ -311,6 +312,10 @@
     height:30vh;
     object-fit: cover;
 
+}
+
+.nepremicnina.hide {
+    display: none;
 }
 
 .nepremicnina a {
