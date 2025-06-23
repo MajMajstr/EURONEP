@@ -14,8 +14,11 @@ function filterSelection(c) {
     x = document.getElementsByClassName("nepremicnina");
     if(c == "all") c = "";
     for (i=0; i< x.length; i++){
-        removeClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1 || c == "") {
+            x[i].classList.remove("hide"); // prikaz
+        } else {
+            x[i].classList.add("hide"); // skrij
+        }
     }
 }
 
@@ -66,8 +69,11 @@ function filterSelection1(c) {
     x = document.getElementsByClassName("nepremicnina");
     if(c == "all") c = "";
     for (i=0; i< x.length; i++){
-        removeClass1(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) addClass1(x[i], "show");
+        if (x[i].className.indexOf(c) > -1 || c == "") {
+            x[i].classList.remove("hide");
+        } else {
+            x[i].classList.add("hide");
+        }
     }
 }
 
