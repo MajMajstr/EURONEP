@@ -315,7 +315,7 @@
 
 .nepremicnina img {
     width: 100%;
-    height: 180px;
+    height: 20vh;
     object-fit: cover;
     display: block;
 }
