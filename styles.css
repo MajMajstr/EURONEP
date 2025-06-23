@@ -301,24 +301,23 @@
 .nepremicnina {
     border: 3px solid #000000;
     background: white;
-    padding: 1%;
+    padding: 1rem;
     width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    overflow: hidden;
+    align-items: stretch;
     box-sizing: border-box;
-    height: auto; /* 🔧 Odstrani fiksno višino */
-    max-height: 550px; /* 🔧 Omeji max višino, če želiš poravnavo */
+    overflow: hidden;
+    min-height: 500px;
+    max-height: 100%;
 }
 
 .nepremicnina img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 2px;
-
+    display: block;
 }
 
 .nepremicnina.hide {
