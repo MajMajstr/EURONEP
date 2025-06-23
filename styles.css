@@ -303,7 +303,7 @@
     background: white;
     padding: 1rem;
     width: 20vw;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
