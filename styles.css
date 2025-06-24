@@ -309,7 +309,7 @@
     align-items: stretch;
     box-sizing: border-box;
     overflow: hidden;
-    min-height: 300px;
+    min-height: 400px;
     max-height: 100%;
 }
 
